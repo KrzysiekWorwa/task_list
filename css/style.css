@@ -8,61 +8,14 @@ html {
 
 
 .body {
-background-color: #ddd;
-font-family: "Lato", sans-serif;
+    background-color: #ddd;
+    font-family: "Lato", sans-serif;
 }
 
-.container {
-    max-width: 900px;
-    padding: 20px;
-    margin: 0 auto;
-}
 
-.section__header{
-font-size: 20px;
-padding: 20px;
-margin: 0;
-border-bottom: 1px solid #ddd;
-}
-
-.section__body{
-    padding: 20px;
-}
 .footer {
     background-color: teal;
     padding: 30px;
     text-align: center;
     color: white;
 }
-
-.form__input{
-  padding: 10px;
-  border: 1px solid #ddd;  
-}
-.form__button{
-    padding: 10px;
-    background: teal;
-    color: white;
-    border: none;
-}
-.form__button:hover{
-    background-color: hsl(180, 100%, 30%);
-}
-.form__button:active{
-    background-color: hsl(180, 100%, 35%) 
-}
-.section{
-    background-color: white;
-    margin: 10 px 0px;
-    box-shadow: 0 0 5px #ddd;
-}
-.form{
-display: grid;
-grid-template-columns: 1fr auto;
-grid-gap: 20px;
-}
-@media(max-width: 767px) {
-    .form {
-        grid-template-columns: 1fr;
-    }
- }
