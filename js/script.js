@@ -68,7 +68,7 @@
 
         if (newTaskContent !== "") {
             addNewTask(newTaskContent);
-            newTaskContent.value = "";
+            newTaskElement.value = "";
         }
         newTaskElement.focus();
 
