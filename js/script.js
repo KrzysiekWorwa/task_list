@@ -66,8 +66,7 @@
 
     const renderTasks = () => {
         const taskToHTML = task => `
-            <li
-            class="tasks__item${task.done && hideDoneTasks ? " tasks__item--hidden" : ""} js-task"
+            <li class="tasks__item${task.done && hideDoneTasks ? " tasks__item--hidden" : ""} js-tasks"
             >
             <button class="tasks__button tasks__button--toggleDone js-toggleDone">${task.done ? "✓" : ""}</button>
             <span class="tasks__content${task.done ? " tasks__content--done" : ""}">${task.content}</span>
@@ -76,7 +75,7 @@
             </button>
             </li>
             `;
-    const tasksElement = document.querySelector(".ja-tasks");
+    const tasksElement = document.querySelector(".js-tasks");
     tasksElement.innerHTML = tasks.map(taskToHTML).join("");
         
     };

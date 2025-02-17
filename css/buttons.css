@@ -1,7 +1,6 @@
 .buttons {
-    display: grid;
-    grid-template-columns: 1 fr auto;
-    grid-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .buttons__button {
