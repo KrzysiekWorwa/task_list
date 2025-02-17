@@ -18,7 +18,7 @@
         ...tasks[taskIndex],
         done: !tasks[taskIndex].done,
         },
-        ...tasls.slice(taskIndex + 1),
+        ...tasks.slice(taskIndex + 1),
         ];
         render();
     };
@@ -29,6 +29,19 @@
             { content: newTaskContent }
         ];
         render();
+    };
+
+    const markAllTasksDone = () => {
+        tasks = tasks.map((task) => ({
+            ...task,
+            done: true,
+        }));
+        render();
+    };
+
+    const toggleHideDoneTasks = () => {
+        hideDoneTasks = !hideDoneTasks;
+        render ();
     };
 
     const bindRemoveEvents = () => {
@@ -52,12 +65,9 @@
     };
 
     const renderTasks = () => {
-        let tasksListHTMLContent = "";
-
-        for (const task of tasks) {
-            tasksListHTMLContent += `
+        const taskToHTML = task => `
             <li
-            class="tasks__item js-task"
+            class="tasks__item${task.done && hideDoneTasks ? " tasks__item--hidden" : ""} js-task"
             >
             <button class="tasks__button tasks__button--toggleDone js-toggleDone">${task.done ? "✓" : ""}</button>
             <span class="tasks__content${task.done ? " tasks__content--done" : ""}">${task.content}</span>
@@ -66,12 +76,14 @@
             </button>
             </li>
             `;
-        }
-        document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
-
+    const tasksElement = document.querySelector(".ja-tasks");
+    tasksElement.innerHTML = tasks.map(taskToHTML).join("");
+        
     };
 
-    const renderButtons = () => {};
+    const renderButtons = () => {
+        const buttonsElement = document.querySelector(".js-buttons");
+    };
 
     const bindButtonsEvents = () => {};
 

@@ -10,6 +10,11 @@
     }
 }
 
+.buttons {
+    display: grid;
+    grid-template-columns: 1 fr auto;
+    grid-gap: 30px;
+}
 .form__input {
     padding: 10px;
     border: 1px solid #ddd;
