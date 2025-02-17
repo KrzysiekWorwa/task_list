@@ -41,7 +41,7 @@
 
     const toggleHideDoneTasks = () => {
         hideDoneTasks = !hideDoneTasks;
-        render ();
+        render();
     };
 
     const bindRemoveEvents = () => {
