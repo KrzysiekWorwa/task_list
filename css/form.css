@@ -10,11 +10,7 @@
     }
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: 1 fr auto;
-    grid-gap: 30px;
-}
+
 .form__input {
     padding: 10px;
     border: 1px solid #ddd;
@@ -25,7 +21,7 @@
     background: teal;
     color: white;
     border: none;
-    transition: 1s;
+    transition: 0.3s;
 }
 
 .form__button:hover {

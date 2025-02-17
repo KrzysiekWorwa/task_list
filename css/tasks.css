@@ -27,35 +27,7 @@
     width: 30px;
     height: 30px;
     padding: 0;
-    transition: 1s;
-}
-
-.event__button--toggleHideDone {
-    color:hsl(180, 51%, 49%);
-    border: none;
-    background: none;
-}
-
-.event__button--toggleHideDone:hover {
-    color:hsl(180, 51%, 59%);
-}
-
-.event__button--toggleHideDone:active {
-    color:hsl(180, 51%, 69%);
-}
-
-.event__button--markAllDone{
-    color:hsl(180, 51%, 59%);
-    border: none;
-    background: none;
-}
-
-.event__button--markAllDone:hover{
-    color:hsl(180, 51%, 69%);
-}
-
-.event__button--markAllDone:active{
-    color:hsl(180, 51%, 79%);
+    transition: 0.3s;
 }
 
 .tasks__button--toggleDone {
